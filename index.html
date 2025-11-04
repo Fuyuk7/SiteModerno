@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design | Fuyuk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">FV</div>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="content">
+      <p class="subtitle">OUR VERSION</p>
+      <h1>DESIGN</h1>
+      <p class="description">
+        Our hobby is a modern and convenient design, the key to successful communication with the client.
+      </p>
+      <a href="#" class="see-more">
+        <span>See More</span>
+        <div class="circle"></div>
+      </a>
+      <div class="pagination">
+        <span>01</span>
+        <div class="line"></div>
+        <span>03</span>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="statue.png" alt="Statue" />
+      <div class="circle-bg"></div>
+    </div>
+  </main>
+  
+  <script>
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      links.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+</script>
+</body>
+</html>
