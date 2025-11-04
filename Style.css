@@ -136,7 +136,6 @@ h1 {
   background: #444;
 }
 
-/* IMAGE FULL WIDTH (DEITADA) */
 .image-container {
   position: absolute;
   top: 0;
@@ -194,7 +193,7 @@ h1 {
     opacity: 0.3;
   }
   
-  /* ===== NAVBAR LINKS HOVER EFFECT ===== */
+
 
 nav ul {
   display: flex;
@@ -211,7 +210,7 @@ nav a {
   padding-bottom: 5px;
 }
 
-/* Linha verde animada */
+
 nav a::after {
   content: "";
   position: absolute;
@@ -225,19 +224,16 @@ nav a::after {
   transition: transform 0.3s ease;
 }
 
-/* Quando passa o mouse */
 nav a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* Quando o link está "ativo" (clicado) */
 nav a.active::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* Mudança de cor do texto no hover */
 nav a:hover {
   color: var(--green);
 }
